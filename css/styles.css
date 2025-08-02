@@ -166,6 +166,8 @@ img {
 /* hero section */
 
 .hero-section {
+  max-width: 1440px;
+  margin: 0 auto;
   background-color: #2e2f42;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
@@ -174,6 +176,7 @@ img {
     url(../images/hero-section/hero-img.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   padding: 188px 0;
 }
 
@@ -227,9 +230,13 @@ img {
 }
 
 .benefits-item-icon-bg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   border: 1px solid #8e8f99;
   border-radius: 4px;
-  width: 264px;
+
   height: 112px;
   background-color: #f4f4fd;
 
@@ -320,11 +327,20 @@ img {
   gap: 24px;
 }
 
-.socials-item-circle {
-  background-color: #4d5ae5;
-  border-radius: 50%;
+.socials-item {
   width: 40px;
   height: 40px;
+}
+
+.socials-item-circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
 
   position: relative;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -332,14 +348,11 @@ img {
 
 .socials-item-circle:hover,
 .socials-item-circle:focus {
-  background-color: #31d0aa;
+  background-color: #404bbf;
 }
 
 .socials-item-icon {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   fill: #fff;
 }
 
@@ -387,10 +400,15 @@ img {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 2;
   width: 100%;
   height: 100%;
+
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #f4f4fd;
   background-color: #4d5ae5;
+
+  padding: 40px 32px;
 
   transform: translateY(100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -447,12 +465,15 @@ img {
   letter-spacing: 0.02em;
   color: #f4f4fd;
   width: 264px;
+}
+
+.logo-n-slogan {
   margin-right: 120px;
 }
 
 .footer-items {
   display: flex;
-  align-items: flex-start;
+  align-items: baseline;
 }
 
 .footer-social-media {
@@ -466,4 +487,9 @@ img {
 
 .footer-socials-list {
   gap: 16px;
+}
+
+.footer-socials-item-circle:hover,
+.footer-socials-item-circle:focus {
+  background-color: #31d0aa;
 }
