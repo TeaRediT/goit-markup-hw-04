@@ -168,7 +168,7 @@ img {
 .hero-section {
   background-color: #2e2f42;
   background-image: linear-gradient(rgba(46, 47, 66, 0.7)),
-    url(/images/hero-section/hero-img.jpg);
+    url(./images/hero-section/hero-img.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   padding: 188px 0;
